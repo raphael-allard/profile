@@ -1,143 +1,138 @@
+/* general */
+
 body {
-  background: #F0F0F0;
+  background: #fffef4;
+  color: #141414;
   font-family: 'Open Sans', sans-serif;
-  color: #292929;
-  font-size: 20px;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
-header {
-  background-image: url(images/profile.jpg);
-  background-size: cover;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: lighter;
   text-transform: uppercase;
-  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
   color: white;
-  line-height: 80px;
 }
 
-h1 {
-  font-size: 50px;
+/* container */
+
+.container {
+  width: 800px;
+  margin: 40px auto;
 }
 
-h2 {
-  font-size: 30px;
-}
+/* card */
 
-header h1:hover, h2:hover {
-  color: #FFC43D;
-}
-
-#hobbies-card {
-  height: 450px;
-  margin-bottom: 50px;
-}
-
-#hobbies-block {
-  height: 250px;
-  display: flex;
+.card {
+  background: #f7f7f7;
   margin: 30px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px #c3c3c3;
 }
+
+/* resume card */
+
+#profile-logo {
+  border-radius: 75px;
+  width: 125px;
+  height: 125px;
+}
+
+#mountains {
+  width: 100%;
+}
+
+.btn-card {
+  background: #313131;
+  margin: 30px auto 30px auto;
+  padding: 15px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.btn-card:hover {
+  background: #fdc33e;
+  transition: all 0.3s ease-out;
+}
+
+/* hobbies card */
 
 .hobby {
-  height: 100%;
-  flex-basis: 100%;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid #d8d8d8;
-  margin: 60px 30px 30px 30px;
-  box-shadow: 6px 6px 7px #d4a844;
+  width: 150px;
+  margin: 0px 30px 30px 30px;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  box-shadow: 7px 7px 10px #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.hobby h4 {
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .hobby:hover {
-  background: #292929;
-}
-
-.hobby p {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center;
-  font-size: 25px;
-  text-transform: uppercase;
-  color: #d4a844;
+  background: #313131;
+  color: white;
+  transition: all 0.3s ease-out;
 }
 
 .hobby img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
-.hobby p {
-  margin: 0;
+/* social network card */
+
+.card h3 {
+  font-size: 25px;
 }
 
-#button {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center;
-  padding: 60px;
-}
-
-button a {
-  display: flex;
-  align-items: center;
-}
-
-#hobbies-card a {
-  background: #d4a844;
-  color: white;
-  text-decoration: none;
-  margin-top: 30px;
-  padding: 15px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: lighter;
-}
-
-#hobbies-card a:hover {
-  background: #292929;
-}
-
-footer {
-  background: #292929;
-  height: 165px;
-  display: flex;
-  align-items: center;
-}
-
-footer ul {
-  list-style: none;
-  margin: 0;
+ul {
+  margin: 30px;
   padding: 0;
+  list-style-type: none;
   display: flex;
-  align-items: center;
-  flex-basis: 100%;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-/* footer li {
-  display: flex;
-} */
-
-footer a {
-  color: #F0F0F0;
-  font-size: 70px;
+ul i {
+  font-size: 75px;
+  color: #fdc33e;
 }
 
-footer a:hover {
-  color: #d4a844;
-  font-size: 80px;
+ul i:hover {
+  font-size: 77px;
+  color: #313131;
+  transition: all 0.3s ease-out;
+}
+
+/* responsive */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
