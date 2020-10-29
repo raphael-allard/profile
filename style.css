@@ -55,11 +55,11 @@ a {
   padding: 15px;
   width: 200px;
   border-radius: 5px;
+  transition: all 0.3s ease-out;
 }
 
 .btn-card:hover {
   background: #fdc33e;
-  transition: all 0.3s ease-out;
 }
 
 /* hobbies card */
@@ -72,6 +72,7 @@ a {
   border-radius: 3px;
   box-shadow: 7px 7px 10px #e0e0e0;
   padding-bottom: 20px;
+  transition: all 0.3s ease-out;
 }
 
 .hobby h4 {
@@ -82,7 +83,6 @@ a {
 .hobby:hover {
   background: #313131;
   color: white;
-  transition: all 0.3s ease-out;
 }
 
 .hobby img {
@@ -108,12 +108,12 @@ ul {
 ul i {
   font-size: 75px;
   color: #fdc33e;
+  transition: all 0.3s ease-out;
 }
 
 ul i:hover {
   font-size: 77px;
   color: #313131;
-  transition: all 0.3s ease-out;
 }
 
 /* responsive */
